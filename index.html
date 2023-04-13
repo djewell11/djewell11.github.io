@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test Point Map 0.1</title>
+  <title>Test Point Map 0.148498</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -67,10 +67,15 @@
     for (var i in data) {
       var row = data[i];
 
-      var marker = L.marker([row.Latitude, row.Longitude], {
-        opacity: 1,
-        color: row.Colour
-      }).bindPopup(row.Group);
+      
+      //var marker = L.marker([row.Latitude, row.Longitude], {
+        //opacity: 1,
+        //riseOnHover: true
+      //}).bindPopup(row.Group);
+        var marker = L.marker([row.Latitude, row.Longitude], {
+            opacity: 1,
+            color: row.Colour
+        }).bindPopup(row.Group);
       
       marker.addTo(map);
     }
