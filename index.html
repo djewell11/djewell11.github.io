@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test Point Map 0.148498</title>
+  <title>Test Point Map 48293</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -75,7 +75,7 @@
         var marker = L.circleMarker([row.Latitude, row.Longitude], {
             fillOpacity: 0.8,
             fillColor: row.Colour
-        });
+        }).bindPopup(row.Group);
       
       marker.addTo(map);
     }
