@@ -72,9 +72,9 @@
         //opacity: 1,
         //riseOnHover: true
       //}).bindPopup(row.Group);
-        var marker = L.marker([row.Latitude, row.Longitude], {
-            opacity: 1,
-            color: row.Colour
+        var marker = L.circleMarker([row.Latitude, row.Longitude], {
+            fillOpacity: 0.8,
+            fillColor: row.Colour
         });
       
       marker.addTo(map);
