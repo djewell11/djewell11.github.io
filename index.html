@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test Point Map 12311</title>
+  <title>Test Point Map 93040</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -73,11 +73,11 @@
         //riseOnHover: true
       //}).bindPopup(row.Group);
       var marker = L.circleMarker([row.Latitude, row.Longitude], {
-        radius: 0.6,
+        radius: 6,
         weight: 1,
         fillOpacity: 0.8,
         fillColor: row.Colour
-      }).bindPopup(row.Group);
+      }).bindPopup(row.Colour);
       
       marker.addTo(map);
     }
